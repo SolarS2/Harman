@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/Test01/.vs/Test01
+/Test01/Test01/x64/Debug
+/Test01/x64/Debug
