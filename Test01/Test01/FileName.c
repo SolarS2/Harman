@@ -3,6 +3,7 @@
 
 int test01();
 int test02(int a);
+<<<<<<< HEAD
 int test03();
 int Dump(char* p, int len); // 메모리 공간 출력용 범용함수(라이브러리 적용 가능)
 int Copy(char* p1, char* p2);
@@ -14,6 +15,14 @@ main()
 	test03();
 }
 
+=======
+
+
+main()
+{
+ test02(1);
+}
+>>>>>>> 1993042ece093b0836f261ea9729bfc3ce8193f9
 int test01()
 {
 	char* str[10] = { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", };
@@ -78,6 +87,7 @@ int test01()
 }
 int test02(int a)	// 문자열과 문자배열
 {
+<<<<<<< HEAD
 	char ca[] = "Hello"; // ca0] : 'H' ... ca[4]:'o' ca[5] :\0(null)
 
 	for (int i = 0; i < 6; i++) // 0~5
@@ -132,3 +142,19 @@ int Dump(char* p, int len) // 메모리 공간 출력용 범용함수(라이브러리 적용 가능)
 		printf("%02x ", (unsigned char)*p++); // p는 주소값 *p 주소에 해당하는 값으로 문자값
 	}
 }
+=======
+		char ca[] = "Hello"; // ca0] : 'H' ... ca[4]:'o' ca[5] :\0(null)
+
+		for (int i = 0; i < 6; i++) // 0~5
+		{
+			printf("ca[%d] : %c (%03x)\n", i, ca[i], ca[i]); //%d 숫자 %c char // %02x 16진수 %와 x 사이
+		}
+		ca[2] -= 1;
+		ca[3] -= 1;
+
+		for (int i = 0; i < 6; i++) // 0~5
+		{
+			printf("ca[%d] : %c (%03x)\n", i, ca[i], ca[i]); //%d 숫자 %c char // %02x 16진수 %와 x 사이}
+		}
+}
+>>>>>>> 1993042ece093b0836f261ea9729bfc3ce8193f9
