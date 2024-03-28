@@ -1,0 +1,22 @@
+﻿  FileName.c
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(26,12): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(85,10): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'char *'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(85,10): warning C4313: 'printf': 서식 문자열의 '%x'이(가) char *' 형식의 인수 4과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(93,10): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'int *'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(93,10): warning C4313: 'printf': 서식 문자열의 '%x'이(가) int *' 형식의 인수 4과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(99,11): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'int (*)[2]'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(99,11): warning C4313: 'printf': 서식 문자열의 '%x'이(가) int (*)[2]' 형식의 인수 4과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(111,77): warning C4311: '형식 캐스트': 'char [100]'에서 'unsigned int'(으)로 포인터가 잘립니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(111,9): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'char *'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(111,9): warning C4313: 'printf': 서식 문자열의 '%x'이(가) char *' 형식의 인수 2과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(117,2): warning C4013: 'strcpy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(113,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(116,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(130,37): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(130,37): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(119): warning C4716: 'test03': 값을 반환해야 합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(78): warning C4716: 'test01': 값을 반환해야 합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(102): warning C4716: 'test02': 값을 반환해야 합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(124): warning C4716: 'Copy': 값을 반환해야 합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test01\Test01\FileName.c(134): warning C4716: 'Dump': 값을 반환해야 합니다.
+  Test01.vcxproj -> C:\Users\SYSTEM-00\source\repos\Work\Test01\x64\Debug\Test01.exe

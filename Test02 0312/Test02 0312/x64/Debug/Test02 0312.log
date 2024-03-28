@@ -1,0 +1,23 @@
+﻿  FileName.c
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(76,18): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(138,16): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'char *'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(138,16): warning C4313: 'printf': 서식 문자열의 '%x'이(가) char *' 형식의 인수 4과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(146,16): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'int *'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(146,16): warning C4313: 'printf': 서식 문자열의 '%x'이(가) int *' 형식의 인수 4과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(152,20): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'int (*)[2]'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(152,20): warning C4313: 'printf': 서식 문자열의 '%x'이(가) int (*)[2]' 형식의 인수 4과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(164,80): warning C4311: '형식 캐스트': 'char [100]'에서 'unsigned int'(으)로 포인터가 잘립니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(164,12): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'char *'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(164,12): warning C4313: 'printf': 서식 문자열의 '%x'이(가) char *' 형식의 인수 2과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(185,16): warning C4477: 'printf' : 서식 문자열 '%08x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'char *'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(185,16): warning C4313: 'printf': 서식 문자열의 '%x'이(가) char *' 형식의 인수 2과(와) 충돌합니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(202,12): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(202,12): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(198,10): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(219,12): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(219,12): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(220,12): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(220,12): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(249,43): warning C4474: 'printf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\Test02 0312\FileName.c(249,43): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+  Test02 0312.vcxproj -> C:\Users\SYSTEM-00\source\repos\Work\Test02 0312\x64\Debug\Test02 0312.exe
