@@ -297,10 +297,10 @@ END GROUP
                 0x000000c8                SegPort
  .text.seg      0x000000da       0x4c Segment.o
                 0x000000da                seg
- .text.FND_4    0x00000126       0x3a Segment.o
+ .text.FND_4    0x00000126       0x42 Segment.o
                 0x00000126                FND_4
- .text.Disp     0x00000160       0xca Segment.o
-                0x00000160                Disp
+ .text.Disp     0x00000168       0xc2 Segment.o
+                0x00000168                Disp
  .text.main     0x0000022a       0x60 Test_Timer.o
                 0x0000022a                main
  .text.__vector_14
@@ -333,44 +333,46 @@ END GROUP
  *(.fini0)
                 0x000002e8                _etext = .
 
-.data           0x00800100       0x16 load address 0x000002e8
+.data           0x00800100       0x18 load address 0x000002e8
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
- .data.PB       0x00800100        0x2 Segment.o
-                0x00800100                PB
- .data.PA       0x00800102        0x2 Segment.o
-                0x00800102                PA
- .data.digit    0x00800104       0x12 Segment.o
-                0x00800104                digit
+ .data.sm       0x00800100        0x2 Segment.o
+                0x00800100                sm
+ .data.PB       0x00800102        0x2 Segment.o
+                0x00800102                PB
+ .data.PA       0x00800104        0x2 Segment.o
+                0x00800104                PA
+ .data.digit    0x00800106       0x12 Segment.o
+                0x00800106                digit
  *(.gnu.linkonce.d*)
  *(.rodata)
  *(.rodata*)
  *(.gnu.linkonce.r*)
-                0x00800116                . = ALIGN (0x2)
-                0x00800116                _edata = .
-                0x00800116                PROVIDE (__data_end, .)
+                0x00800118                . = ALIGN (0x2)
+                0x00800118                _edata = .
+                0x00800118                PROVIDE (__data_end, .)
 
-.bss            0x00800116        0xd
-                0x00800116                PROVIDE (__bss_start, .)
+.bss            0x00800118        0xd
+                0x00800118                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.tcnt      0x00800116        0x4 Test_Timer.o
-                0x00800116                tcnt
- .bss.cnt       0x0080011a        0x4 Test_Timer.o
-                0x0080011a                cnt
+ .bss.tcnt      0x00800118        0x4 Test_Timer.o
+                0x00800118                tcnt
+ .bss.cnt       0x0080011c        0x4 Test_Timer.o
+                0x0080011c                cnt
  *(COMMON)
- COMMON         0x0080011e        0x5 Segment.o
-                0x0080011e                arr
-                0x00800123                PROVIDE (__bss_end, .)
+ COMMON         0x00800120        0x5 Segment.o
+                0x00800120                arr
+                0x00800125                PROVIDE (__bss_end, .)
                 0x000002e8                __data_load_start = LOADADDR (.data)
-                0x000002fe                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000300                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800123        0x0
+.noinit         0x00800125        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800123                _end = .
+                0x00800125                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -446,11 +448,11 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xb87
+.debug_info     0x00000000      0xb95
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x780 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega128/avr51/crtatmega128.o
- .debug_info    0x00000780      0x2e6 Segment.o
- .debug_info    0x00000a66      0x121 Test_Timer.o
+ .debug_info    0x00000780      0x2f4 Segment.o
+ .debug_info    0x00000a74      0x121 Test_Timer.o
 
 .debug_abbrev   0x00000000      0x993
  *(.debug_abbrev)
@@ -458,16 +460,16 @@ END GROUP
  .debug_abbrev  0x00000718      0x19b Segment.o
  .debug_abbrev  0x000008b3       0xe0 Test_Timer.o
 
-.debug_line     0x00000000      0x47a
+.debug_line     0x00000000      0x47e
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x16a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega128/avr51/crtatmega128.o
- .debug_line    0x0000016a      0x1fd Segment.o
- .debug_line    0x00000367      0x113 Test_Timer.o
+ .debug_line    0x0000016a      0x201 Segment.o
+ .debug_line    0x0000036b      0x113 Test_Timer.o
 
-.debug_frame    0x00000000       0xcc
+.debug_frame    0x00000000       0xd0
  *(.debug_frame)
- .debug_frame   0x00000000       0x78 Segment.o
- .debug_frame   0x00000078       0x54 Test_Timer.o
+ .debug_frame   0x00000000       0x7c Segment.o
+ .debug_frame   0x0000007c       0x54 Test_Timer.o
 
 .debug_str      0x00000000      0x456
  *(.debug_str)
@@ -477,10 +479,10 @@ END GROUP
  .debug_str     0x0000042e       0x28 Test_Timer.o
                                 0x19e (size before relaxing)
 
-.debug_loc      0x00000000      0x2fb
+.debug_loc      0x00000000      0x2e7
  *(.debug_loc)
- .debug_loc     0x00000000      0x298 Segment.o
- .debug_loc     0x00000298       0x63 Test_Timer.o
+ .debug_loc     0x00000000      0x284 Segment.o
+ .debug_loc     0x00000284       0x63 Test_Timer.o
 
 .debug_macinfo
  *(.debug_macinfo)
