@@ -34,14 +34,15 @@ int main(void)
 	DDRA = 0x07;
 	SegPort(&PORTD, &PORTC);
 	//shift_time();
-	EIMSK = 0x70; // 0111 0000b
-	EICRB = 0x2A; // 0010 1010b
 	TIMSK |= 0x01; // 0000 0001b - Timer 0 TCNT overflow interrupt
 	//TIMSK |= 0x04; // 0000 0100b - Timer 1 TCNT overflow interrupt
 	//TIMSK |= 0x40; // 0100 0000b - Timer 2 TCNT overflow interrupt
-	TCCR0 = 0x04; // 분주비 (Pre-Scaler) 64
-	//TCCR1B = 0x04;  // 분주비 (Pre-Scaler) 64
-	//TCCR2 = 0x04;  // 분주비 (Pre-Scaler) 64
+	EIMSK = 0x70; // 0111 0000b Timer 3TCNT overFlow interrupt
+	TCCR0 = 0x04; // Timer0 분주비 (Pre-Scaler) 64
+	//TCCR1B = 0x04;  // Timer1 분주비 (Pre-Scaler) 64
+	//TCCR2 = 0x04;  // Timer2 분주비 (Pre-Scaler) 64
+	EICRB = 0x2A; // 0010 1010b
+
 	
 	SREG |= 0x80;
 	sei(); // interrupt 시작

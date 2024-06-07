@@ -62,7 +62,7 @@ ISR(TIMER1_OVF_vect)
 /*ISR(TIMER2_OVF_vect)
 {
 	tcnt++;
-	if( tcnt>=100) //8bit timer 사용시
+	if( tcnt>=500) //8bit timer 사용시
 	{
 		cnt++; tcnt = 0;
 	}
